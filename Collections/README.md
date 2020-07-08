@@ -34,7 +34,7 @@ Identical to Array List except Vectors are synchronized.
 
 
 ### Stack
-LIFO, legacy class. ArrayDequeue is an alternative, faster and not thread safe. 
+LIFO, legacy class. ArrayDeque is an alternative, faster and not thread safe. 
 Extends Vector. Additional methods include `pop()`, `push()`, `empty()`, `search()`, `peek()`. 	
 `List <data-type> list = new Stack(); `
 
@@ -45,6 +45,41 @@ FIFO principle, like real world queues. Dedicated to storing elements where orde
 ### Priority queue 
 Elements placed in queue based on some priority. Elements ordered based on Comparator. 
 `PrioritiyQueue<data-type> pq = new PriorityQueue<data-type>();`
+
+
+## DEQUE INTERFACE
+Extends Queue interface. Double-ended queue where elements can be added/removed from both ends. _ArrayDeque_ implements this interface.
+`Deque<data-type> ad = new ArrayDeque<data-type>();`
+
+## ArrayDeque
+Double-ended, grow dynamically.
+`pushFirst(), pushLast(), pollFirst(), pollLast(),...`
+
+
+## SET INTERFACE
+Store unordered collections of objects, no duplicates. Implemented by _HashSet, TreeSet, LinkedHashSet_. 
+
+### HashSet
+Implementation of hash table data structure. Objects inserted based on how they're hashed. Unordered collection, doesn't maintain order in which elements are inserted. Internally uses HashMap to store its elements. 
+
+### LinkedHashSet
+Uses doubly linked list to store the data. Maintains insertion order. 
+
+
+## SORTED SET INTERFACE
+Extends Set interface. Implementations maintain ordering of elements. 
+
+### Tree Set
+Uses tree to store data in ascending order. 
+
+
+## MAP INTERFACE
+Mapping of key/value pairs. Cannot have duplicate keys. Implemented by _HashMap_, _TreeMap_, _SortedMap_.
+
+### HashMap
+(Key, value) pairs. Key is hashed, value placed at location in table.
+`.put(), .get(), ...`
+
 
 
 ### Questions
