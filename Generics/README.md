@@ -8,7 +8,7 @@ Use `<>` to specify parameter types.
 
 E.g. `BaseType<Type> obj = new BaseType<Type>()`
 
-## Generics Classes 
+## Generics Classes
 
 ### GenericPrinting.java
 _<E>_ is the type parameter, precedes the return type.
